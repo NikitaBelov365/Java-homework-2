@@ -3,6 +3,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+// подскажите, пожалуйста, а есть какой то более красивый вариант этой задачки?
+
 public class First {
     public static void main(String[] args) throws IOException {
         File f = new File("1.txt");
@@ -17,7 +19,7 @@ public class First {
         int index_of_null = line.indexOf("null");
 
         sb.append("select * from students where ");
-        
+
         if (index_of_null > index_name && index_of_null < index_country) {
         } else {sb.append("name = " + line.substring(index_name+7, index_country));}
 
